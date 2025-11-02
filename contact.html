@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — Top Up X</title>
+<style>:root{--bg:#0b0b10;--muted:#cfcfd6;--accent-green:#BFFF00;}
+body{margin:0;background:var(--bg);color:#fff;font-family:Inter,system-ui;}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.03);}
+main{max-width:700px;margin:0 auto;padding:40px 20px;}
+h1{font-size:26px;font-weight:900;}
+.contact{background:rgba(255,255,255,0.03);padding:20px;border-radius:10px;margin-top:20px;}
+.contact a{color:var(--accent-green);text-decoration:none;font-weight:700;}
+footer{text-align:center;padding:22px;color:var(--muted);font-size:13px;margin-top:40px;}
+</style>
+</head>
+<body>
+<header style="display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid rgba(255,255,255,0.03);">
+  <!-- Left Logo + Text -->
+  <div style="display:flex;align-items:center; gap:10px;">
+    <img src="logo.png" alt="Logo" style="width:40px; height:auto;" />
+    <h2 style="
+        color:#b145ff; 
+        font-weight:900; 
+        text-shadow:0 0 10px #b145ff; 
+        margin:0;
+        font-size:15px;
+    ">
+        Top Up X <br>
+        <span style="
+            color:#bfff45; 
+            text-shadow:0 0 10px #bfff45;
+            font-size:13px;
+            font-weight:600;
+        ">
+            Power Up Now
+        </span>
+    </h2>
+  </div>
+
+  <!-- Back link -->
+  <a href="index.html" style="color:var(--muted);text-decoration:none;">← Back</a>
+</header>
+
+<main>
+  <h1 style="
+  color:#b145ff; 
+  font-weight:900;
+">
+  Contact Us
+</h1>
+
+  <p style="color:var(--muted)">We’re here to help 24/7. Reach us through:</p>
+  <div class="contact">
+    <p>📱 WhatsApp: <a href="https://wa.me/9866952500">+977 9866952500</a></p>
+    <p>💬 Viber: <a href="viber://chat?number=9762427392">+977 9762427392</a></p>
+    <p>📧 Email: <a href="mailto:Rasams023@gmail.com">Rasams023@gmail.com</a></p>
+  </div>
+</main>
+<footer>
+  &copy; <span id="year"></span> Top Up X.
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Top-Up Store</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div style="display:flex;align-items:center; gap:10px;">
+        <img src="logo.png" alt="Logo" />
+        <h2 style="
+    color:#b145ff; 
+    font-weight:900; 
+    text-shadow:0 0 10px #b145ff; 
+    margin:0;
+    font-size:15px; /* smaller Top Up X text */
+">
+    Top Up X <br>
+    <span style="
+        color:#bfff45; 
+        text-shadow:0 0 10px #bfff45;
+        font-size:13px; /* smaller Power Up Now text */
+        font-weight:600;
+    ">
+        Power Up Now
+    </span>
+</h2>
+
+</h2>
+
+    </div>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="chatbox.html">Chat</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section Left + Logo Right -->
+<section class="hero" style="display:flex; align-items:center; justify-content:space-between; padding:50px 40px;">
+
+    <!-- Left text -->
+    <div style="max-width:55%; text-align:left;">
+        <h2>Welcome to Top-Up Store</h2>
+        <p>Fast & Secure Gaming Top-Up</p>
+        <br>
+        <p style="opacity:0.8; font-size:15px;">
+            Recharge your favorite games instantly.  
+            We provide fast, secure and trusted gaming top-ups at the best price.  
+        </p>
+    </div>
+
+    <!-- Right logo -->
+    <div>
+        <img src="logo.png" alt="Logo" style="width:280px; max-width:40vw; filter:drop-shadow(0 0 15px #b145ff);" />
+    </div>
+</section>
+
+<!-- 🔹 Game Cards Section -->
+  <!-- 🔹 Games Title Section -->
+<section style="text-align:center; margin-top:40px;">
+  <h2 style="
+    color:white;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:10px;
+  ">
+    Select The Game to Continue
+  </h2>
+</section>
+<section class="games">
+    <div class="game-card" onclick="location.href='cr.html'">
+      <img src="cr.png" alt="Clash Royale" />
+      <h3>Clash Royale</h3>
+    </div>
+
+    <div class="game-card" onclick="location.href='coc.html'">
+      <img src="coc.png" alt="Clash of Clans" />
+      <h3>Clash of Clans</h3>
+    </div>
+  </section>
+
+  <footer>
+    WhatsApp: 9866952500 | Viber: 9762427392 | Email: Rasams023@gmail.com
+  </footer>
+
+  <!-- 🔹 Floating Chatbox (initially hidden) -->
+  <div class="chatbox-container" id="chatbox" aria-hidden="true">
+    <div class="chatbox-header">
+      <img src="bot-icon.png" alt="Bot" class="bot-icon">
+      <div>
+        <h4>Bot</h4>
+        <span class="status">● Online</span>
+      </div>
+      <button class="chat-close" onclick="toggleChat(true)" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chatbox-body" id="chat-body">
+      <!-- messages will be appended here -->
+    </div>
+
+  <!-- 🔹 Floating Chat Button (optional quick open) -->
+  <div class="chat-toggle" id="chat-toggle" onclick="toggleChat()">
+    💬
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
